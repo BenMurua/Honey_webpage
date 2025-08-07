@@ -1,0 +1,22 @@
+.product-card {
+  width: 30px;
+  max-width: 30px;
+}
+
+.product-image {
+  max-width: 28px;
+  max-height: 16px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.price {
+  font-weight: bold;
+  color: var(--primary);
+  margin-top: 0.5rem;
+}
+

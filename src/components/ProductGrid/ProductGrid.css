@@ -1,0 +1,5 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Siempre tres columnas, adaptativas */
+  gap: 0.5rem;
+}

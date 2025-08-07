@@ -1,0 +1,52 @@
+/* Estilos generales */
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 🎨 Modo Claro (default) */
+:root {
+  --background: #FFFCF2;
+  --text: #3E3A31;
+  --card: #FFFFFF;
+  --border: #E9E4CE;
+  --primary: #FAE29C;
+  --primary-hover: #D4C585;
+  --button-text: #3E3A31;
+}
+
+/* 🌙 Modo Oscuro */
+[data-theme="dark"] {
+  --background: #1A150F;
+  --text: #F5F1E7;
+  --card: #221E18;
+  --border: #2F2A23;
+  --primary: #B3873B;
+  --primary-hover: #8A6A34;
+  --button-text: #FFFDF6;
+}
+
+
+/* Componentes */
+.card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+button {
+  background-color: var(--primary);
+  color: var(--button-text);
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+}
