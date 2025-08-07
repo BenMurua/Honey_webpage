@@ -2,6 +2,7 @@ import "./Header.css";
 import { useTheme } from "../../context/themeContext";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import logo from "../../assets/Erleaerle_logo.jpg";
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
@@ -16,11 +17,7 @@ const Header = () => {
           onClick={() => navigate("/")}
           aria-label="Inicio"
         >
-          <img
-            src="src/assets/Erleaerle_logo.jpg"
-            width="120"
-            alt="Erleaerle Logo"
-          />
+          <img src={logo} width="120" alt="Erleaerle Logo" />
         </button>
 
         <button
