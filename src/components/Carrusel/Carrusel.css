@@ -1,14 +1,42 @@
 .carrusel {
+  width: 100%;
   max-width: 800px;
   margin: 2rem auto;
   padding: 1rem;
   background-color: var(--card);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 1rem;
 }
 
 .carrusel img {
-  width: 100%;
+  flex: 0 0 100%;
   height: auto;
   border-radius: 8px;
+  scroll-snap-align: start;
+  pointer-events: none;
+}
+
+@media (min-width: 600px) {
+  .carrusel img {
+    flex: 0 0 50%; /* 2 imágenes en tablets */
+  }
+}
+
+@media (min-width: 900px) {
+  .carrusel img {
+    flex: 0 0 33.33%; /* 3 imágenes en desktop */
+  }
+}
+
+@media (max-width: 480px) {
+  .carrusel {
+    padding: 0.5rem;
+    margin: 1rem auto;
+  }
 }

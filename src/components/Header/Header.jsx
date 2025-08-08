@@ -9,12 +9,18 @@ const Header = () => {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // Función para manejar navegación y cerrar menú
+  const handleNavClick = (path) => {
+    navigate(path);
+    setMenuOpen(false);
+  };
+
   return (
     <header className="header">
       <nav className="nav-bar">
         <button
           className="logo-btn"
-          onClick={() => navigate("/")}
+          onClick={() => handleNavClick("/")}
           aria-label="Inicio"
         >
           <img src={logo} width="120" alt="Erleaerle Logo" />
@@ -30,17 +36,26 @@ const Header = () => {
 
         <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
           <li>
-            <button className="nav-btn" onClick={() => navigate("/about")}>
+            <button
+              className="nav-btn"
+              onClick={() => handleNavClick("/about")}
+            >
               Nor gara
             </button>
           </li>
           <li>
-            <button className="nav-btn" onClick={() => navigate("/products")}>
+            <button
+              className="nav-btn"
+              onClick={() => handleNavClick("/products")}
+            >
               Produktuak
             </button>
           </li>
           <li>
-            <button className="nav-btn" onClick={() => navigate("/contact")}>
+            <button
+              className="nav-btn"
+              onClick={() => handleNavClick("/contact")}
+            >
               Kontaktua
             </button>
           </li>
