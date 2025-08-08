@@ -7,26 +7,33 @@ body {
 }
 
 /* 🎨 Modo Claro (default) */
+/* 🎨 Modo Claro (default) */
+/* 🎨 Modo Claro (default) */
 :root {
-  --background: #FFFCF2;
-  --text: #3E3A31;
-  --card: #FFFFFF;
-  --border: #E9E4CE;
-  --primary: #FAE29C;
-  --primary-hover: #D4C585;
-  --button-text: #3E3A31;
+  --background: #FFFCF2;       /* crema muy suave */
+  --text: #3E3A31;             /* marrón oscuro */
+  --card: #FFFFFF;             /* blanco */
+  --border: #E9E4CE;           /* beige claro */
+  --primary: #FAE29C;          /* amarillo miel */
+  --primary-hover: #D4C585;    /* amarillo miel oscuro */
+  --button-text: #3E3A31;      /* marrón oscuro */
+  --secondary: #A97C50;        /* marrón miel cálido */
+  --secondary-hover: #7E5A32;  /* marrón oscuro madera */
 }
 
 /* 🌙 Modo Oscuro */
 [data-theme="dark"] {
-  --background: #1A150F;
-  --text: #F5F1E7;
-  --card: #221E18;
-  --border: #2F2A23;
-  --primary: #B3873B;
-  --primary-hover: #8A6A34;
-  --button-text: #FFFDF6;
+  --background: #1A150F;       /* marrón muy oscuro */
+  --text: #F5F1E7;             /* crema claro */
+  --card: #221E18;             /* marrón oscuro */
+  --border: #2F2A23;           /* marrón madera */
+  --primary: #B3873B;          /* dorado miel */
+  --primary-hover: #8A6A34;    /* dorado oscuro */
+  --button-text: #FFFDF6;      /* crema */
+  --secondary: #7D5829;        /* marrón medio */
+  --secondary-hover: #5C421F;  /* marrón oscuro madera */
 }
+
 
 
 /* Componentes */

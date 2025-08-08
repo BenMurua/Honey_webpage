@@ -2,7 +2,7 @@ import "./Header.css";
 import { useTheme } from "../../context/themeContext";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import logo from "../../assets/Erleaerle_logo.jpg";
+import logo from "../../assets/Erleaerle_logo_2.png";
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();

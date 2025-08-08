@@ -7,7 +7,6 @@ const Home = () => {
   return (
     <div className="home-container">
       <VideoCard src={VideoPromo}></VideoCard>
-      <p>This is the main content of the home page.</p>
     </div>
   );
 };
