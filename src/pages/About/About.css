@@ -1,0 +1,67 @@
+/* About Page */
+
+.about-page {
+  margin-top: 20px;
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: 'Poppins', sans-serif;
+  max-width: 1200px;
+  align-self: auto;
+}
+
+.about-page .carrusel-container {
+  flex: 1 1 400px;
+  min-width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.1);
+  background-color: var(--card);
+  border: 1px solid var(--border);
+}
+
+.about-page .text-container {
+  flex: 1 1 450px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-page h1 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  color: var(--primary);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.about-page p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text);
+  white-space: pre-line; /* para respetar saltos de línea si usas \n o <br> */
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .about-page {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .about-page .carrusel-container,
+  .about-page .text-container {
+    flex: 1 1 100%;
+    min-width: auto;
+  }
+
+  .about-page h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+}
