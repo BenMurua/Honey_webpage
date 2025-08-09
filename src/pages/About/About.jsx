@@ -1,20 +1,16 @@
 import Carrusel from "../../components/Carrusel/Carrusel";
 import image_1 from "../../assets/erlea.jpg";
-import image_2 from "../../assets/ahuntza.jpg";
-import image_3 from "../../assets/Erleak.jpg";
-import image_4 from "../../assets/kuboak.jpg";
+import image_2 from "../../assets/Erleak.jpg";
+import image_3 from "../../assets/kuboak.jpg";
 import "./About.css";
 
 const About = () => {
   return (
-    <div
-      className="about-page"
-      style={{ display: "flex", gap: "2rem", flexWrap: "wrap" }}
-    >
-      <div style={{ flex: "1 1 300px" }}>
-        <Carrusel images={[image_1, image_2, image_3, image_4]} />
+    <div className="about-page">
+      <div>
+        <Carrusel images={[image_1, image_2, image_3]} />
       </div>
-      <div style={{ flex: "1 1 300px" }}>
+      <div className="about-text">
         <h1>Guri buruz</h1>
         <p>
           Hernani eta Nafarroan, modu ekologikoan egindako eztia.
