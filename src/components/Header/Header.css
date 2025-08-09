@@ -2,22 +2,15 @@
   background-color: var(--primary);
   color: var(--text);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid var(--border);
   transition: background-color 0.3s ease, color 0.3s ease;
   border-radius: 12px; /* un toque suave y natural */
   box-shadow: 0 4px 15px rgba(184, 134, 11, 0.4); /* sombra dorada */
-  position: relative; /* importante para posicionar elementos internos */
-  z-index: 100;
 }
 
 /* Nav barra principal */
 .nav-bar {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
   width: 100%;
 }
 
@@ -63,13 +56,13 @@
 
 /* Botón toggle tema: negro oscuro con icono */
 .theme-toggle {
+  font-size: 1,6rem;
   background-color: #222222;
   color: #fff;
   border: none;
-  padding: 10px 16px;
+  margin-right: 20px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 1.2rem;
   transition: background-color 0.3s ease;
 }
 

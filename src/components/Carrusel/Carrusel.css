@@ -1,8 +1,7 @@
 .carrusel {
-  width: 100%;
+  width: 90%;
   height: 90%;
   max-width: 800px;
-  margin: 2rem auto;
   padding: 1rem;
   background-color: var(--card);
   border-radius: 12px;
@@ -12,7 +11,6 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  gap: 1rem;
 }
 
 
@@ -23,18 +21,6 @@
   scroll-snap-align: start;
   pointer-events: none;
   object-fit: contain;
-}
-
-@media (max-width: 200px) {
-  .carrusel img {
-    flex: 0 0 50%; /* 2 imágenes en tablets */
-  }
-}
-
-@media (max-width: 200px) {
-  .carrusel img {
-    flex: 0 0 33.33%; /* 3 imágenes en desktop */
-  }
 }
 
 @media (max-width: 200px) {
