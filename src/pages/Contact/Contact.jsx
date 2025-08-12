@@ -1,10 +1,11 @@
 import { useState } from "react";
+import ContactCard from "../../components/ContactCard/ContactCard";
+import image_profile from "../../assets/Asier.jpg";
 
 const Contact = () => {
   return (
     <div>
-      <h1>Contact Page</h1>
-      <p>For inquiries, please email us at</p>
+      <ContactCard image={image_profile}></ContactCard>
     </div>
   );
 };
