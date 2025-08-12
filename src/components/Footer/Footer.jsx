@@ -1,6 +1,8 @@
 import "./Footer.css";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -8,6 +10,7 @@ function Footer() {
           &copy; {new Date().getFullYear()} ErleaErle. 👣Pausoz pauso bertako
           erlearekin🐝
         </p>
+        <p>{t("Footer.line1")}</p>
         <p>Gipuzkoa</p>
         <p>Jarraitu sare sozialetan!</p>
       </div>
