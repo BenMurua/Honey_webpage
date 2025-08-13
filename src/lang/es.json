@@ -1,7 +1,54 @@
 {
-    "Footer":{
-        "line1":"ErleaErle. 👣Pausoz pauso bertakoerlearekin🐝",
-        "line2":"Gipuzkoa",
-        "line3":"Jarraitu sare sozialetan"
-    }
+  "Footer": {
+    "line1": "👣Paso a paso con la abeja local🐝",
+    "line2": "Información y recursos sobre la apicultura",
+    "location": "Gipuzkoa",
+    "followUs": "¡Síguenos en redes sociales!",
+    "instagram": "Instagram"
+  },
+  "Header": {
+    "about": "Quiénes somos",
+    "products": "Productos",
+    "contact": "Contacto",
+    "homeAria": "Inicio",
+    "menuAria": "Menú",
+    "themeToggleAria": "Cambiar tema"
+  },
+  "About": {
+    "title": "Sobre nosotros",
+    "text": "Miel elaborada de manera ecológica en Hernani y Navarra.\n\nHola, soy Asier. Hace cuatro años comencé el camino de la elaboración de miel en los terrenos de mi padre. Siempre me ha gustado la naturaleza y trabajar con productos ecológicos locales, y me sumergí en el mundo de la miel con gran pasión.\n\nRecogemos la miel de diversas flores y árboles de nuestra región, siempre cuidando el medio ambiente y priorizando el bienestar de los animales. Nuestra miel, elaborada de manera tradicional y ecológica, es un producto natural de alta calidad, saludable y con un sabor excepcional.\n\nLa miel no es solo nuestro trabajo, también es un estilo de vida: priorizamos el respeto a la naturaleza y la sostenibilidad a diario. Por ello, nuestros productos están garantizados con certificación ecológica y controles de calidad estrictos.\n\nNuestro objetivo no es solo ofrecer miel, sino también difundir el valor de la naturaleza y la apicultura de nuestra tierra, y construir una relación de confianza y cercanía con los clientes.\n\nVen y descubre nuestra miel, para llevar el sabor y la calidad local a tu hogar."
+  },
+  "Products": {
+    "title": "Productos",
+    "noProducts": "En este momento no tenemos productos disponibles.",
+    "items": [
+      {
+        "name": "Miel Natural Casera 250g",
+        "description": "Miel elaborada ecológicamente, con sabor de flores variadas."
+      },
+      {
+        "name": "Miel Natural Casera 500g",
+        "description": "Miel de alta calidad, de flores variadas, en formato más grande."
+      },
+      {
+        "name": "Miel Monofloral de Romero 250g",
+        "description": "Miel de polen de romero, con sabor especial y aromático."
+      },
+      {
+        "name": "Miel Monofloral de Romero 500g",
+        "description": "Miel de polen de romero, sabor especial, en envase más grande."
+      },
+      {
+        "name": "Polvo de Abeja Natural 150g",
+        "description": "Polvo de abeja, como fertilizante y suplemento natural."
+      },
+      {
+        "name": "Miel Cristalizada 300g",
+        "description": "Miel con cristalización natural, textura cremosa."
+      }
+    ]
+  },
+  "ProductCard": {
+    "AddToCart": "Añadir al carrito"
+  }
 }

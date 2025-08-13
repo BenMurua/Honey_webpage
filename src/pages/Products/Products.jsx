@@ -1,58 +1,30 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import ProductGrid from "../../components/ProductGrid/ProductGrid";
 import product_image from "../../assets/eztia.jpg";
 
-const sampleProducts = [
-  {
-    id: 1,
-    name: "Etxeko Eztia 250g",
-    description: "Lore anitzeko ezti natural eta goxoa.",
-    price: 12.5,
-    image: product_image,
-  },
-  {
-    id: 2,
-    name: "Txertatutako Eztia 500g",
-    description: "Kalitate handiko, zapore indartsuko eztia.",
-    price: 20.0,
-    image: product_image,
-  },
-  {
-    id: 3,
-    name: "Txinparta Polena 200g",
-    description: "Erle polen naturala, osasuntsu eta energetikoa.",
-    price: 8.0,
-    image: product_image,
-  },
-  {
-    id: 4,
-    name: "Ezti Kristalizatu 300g",
-    description:
-      "Ezti mota hau kristalizazio naturala duena, testura krematsua.",
-    price: 15.0,
-    image: product_image,
-  },
-  {
-    id: 5,
-    name: "Erle Errautsa 150g",
-    description: "Erle errautsa, ongarria eta osagarri natural moduan.",
-    price: 9.5,
-    image: product_image,
-  },
-  {
-    id: 6,
-    name: "Eztia eta Ganbak Paketea",
-    description: "Etxeko eztia eta ganbak, pakete berezian.",
-    price: 25.0,
-    image: product_image,
-  },
-];
-
 const PaginaProducts = () => {
+  const { t } = useTranslation();
+
+  // Obtenemos los productos, devolviendo un array vacío si no existe
+  const productsData = t("Products.items", { returnObjects: true }) || [];
+
+  const products = productsData.map((item, index) => ({
+    id: index + 1,
+    name: item.name,
+    description: item.description,
+    price: [12.5, 20.0, 8.0, 15.0, 9.5, 25.0][index] || 0,
+    image: product_image,
+  }));
+
   return (
     <main>
-      <h1>Productos</h1>
-      <ProductGrid products={sampleProducts} />
+      <h1>{t("Products.title")}</h1>
+      {products.length > 0 ? (
+        <ProductGrid products={products} />
+      ) : (
+        <p>{t("Products.noProducts")}</p>
+      )}
     </main>
   );
 };

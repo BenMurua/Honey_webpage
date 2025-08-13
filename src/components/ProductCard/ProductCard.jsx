@@ -1,8 +1,10 @@
 // Product.jsx
 import React from "react";
 import "./ProductCard.css";
+import { useTranslation } from "react-i18next";
 
 const ProductCard = ({ product }) => {
+  const { t } = useTranslation();
   return (
     <div className="product-card">
       <h3>{product.name}</h3>
@@ -11,7 +13,7 @@ const ProductCard = ({ product }) => {
         <p>{product.description}</p>
         <p className="price">${product.price}</p>
       </div>
-      <button>Añadir al carrito</button>
+      <button>{t("ProductCard.AddToCart")}</button>
     </div>
   );
 };
