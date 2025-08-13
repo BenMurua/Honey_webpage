@@ -3,8 +3,10 @@ import { useTheme } from "../../context/themeContext";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import logo from "../../assets/Erleaerle_logo_2.png";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+  const { t } = useTranslation();
   const { theme, toggleTheme } = useTheme();
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,7 +23,7 @@ const Header = () => {
         <button
           className="logo-btn"
           onClick={() => handleNavClick("/")}
-          aria-label="Inicio"
+          aria-label={t("Header.homeAria")}
         >
           <img src={logo} width="120" alt="Erleaerle Logo" />
         </button>
@@ -29,7 +31,7 @@ const Header = () => {
         <button
           className="hamburger"
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Menu"
+          aria-label={t("Header.menuAria")}
         >
           ☰
         </button>
@@ -40,7 +42,7 @@ const Header = () => {
               className="nav-btn"
               onClick={() => handleNavClick("/about")}
             >
-              Nor gara
+              {t("Header.about")}
             </button>
           </li>
           <li>
@@ -48,7 +50,7 @@ const Header = () => {
               className="nav-btn"
               onClick={() => handleNavClick("/products")}
             >
-              Produktuak
+              {t("Header.products")}
             </button>
           </li>
           <li>
@@ -56,7 +58,7 @@ const Header = () => {
               className="nav-btn"
               onClick={() => handleNavClick("/contact")}
             >
-              Kontaktua
+              {t("Header.contact")}
             </button>
           </li>
         </ul>
@@ -64,7 +66,7 @@ const Header = () => {
         <button
           className="theme-toggle"
           onClick={toggleTheme}
-          aria-label="Toggle theme"
+          aria-label={t("Header.themeToggleAria")}
         >
           {theme === "dark" ? "☀️" : "🌙"}
         </button>

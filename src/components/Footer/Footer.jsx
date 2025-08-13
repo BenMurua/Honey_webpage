@@ -7,12 +7,11 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <p>
-          &copy; {new Date().getFullYear()} ErleaErle. 👣Pausoz pauso bertako
-          erlearekin🐝
+          &copy; {new Date().getFullYear()} ErleaErle. {t("Footer.line1")}
         </p>
-        <p>{t("Footer.line1")}</p>
-        <p>Gipuzkoa</p>
-        <p>Jarraitu sare sozialetan!</p>
+        <p>{t("Footer.line2")}</p>
+        <p>{t("Footer.location")}</p>
+        <p>{t("Footer.followUs")}</p>
       </div>
       <div className="footer-links">
         <a

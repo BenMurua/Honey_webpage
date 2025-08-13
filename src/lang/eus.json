@@ -1,7 +1,17 @@
 {
-    "Footer":{
-        "line1":"ErleaErle. 👣Pausoz pauso bertakoerlearekin🐝",
-        "line2":"Gipuzkoa",
-        "line3":"Jarraitu sare sozialetan"
-    }
+  "Footer": {
+    "line1": "👣Pausoz pauso bertako erlearekin🐝",
+    "line2": "Erlezaintzaren inguruko informazioa eta baliabideak",
+    "location": "Gipuzkoa",
+    "followUs": "Jarraitu sare sozialetan!",
+    "instagram": "Instagram"
+  },
+    "Header": {
+    "about": "Nor gara",
+    "products": "Produktuak",
+    "contact": "Kontaktua",
+    "homeAria": "Hasiera",
+    "menuAria": "Menua",
+    "themeToggleAria": "Gaiaren aldaketa"
+  }
 }
