@@ -3,44 +3,23 @@ import image_1 from "../../assets/erlea.jpg";
 import image_2 from "../../assets/Erleak.jpg";
 import image_3 from "../../assets/kuboak.jpg";
 import "./About.css";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="about-page">
       <div>
         <Carrusel images={[image_1, image_2, image_3]} />
       </div>
       <div className="about-text">
-        <h1>Guri buruz</h1>
-        <p>
-          Hernani eta Nafarroan, modu ekologikoan egindako eztia.
-          <br />
-          <br />
-          Kaixo, Asier naiz. Duela lau urte hasi nintzen eztia egiteko bidea
-          nire aitaren terrenoetan. Betidanik gustatu izan zait natura eta
-          bertako produktu ekologikoak lantzea, eta eztiaren mundu honetan
-          murgildu nintzen pasio handi batekin.
-          <br />
-          <br />
-          Gure lurraldeko lore eta zuhaitz ezberdinetatik jasotzen ditugu
-          eztiak, betiere ingurumena zainduz eta abereen ongizatea lehenesten.
-          Modu tradizionalean eta ekologikoki egindako gure eztiak kalitate
-          handiko produktu naturalak dira, osasuntsuak eta zapore paregabea
-          dutenak.
-          <br />
-          <br />
-          Eztia ez da soilik gure lanbidea, baita bizimodu bat ere: naturarekiko
-          errespetua eta jasangarritasuna lehenesten ditugu egunero. Hori dela
-          eta, gure produktuak ziurtagiri ekologikoarekin eta kalitate kontrol
-          zorrotzekin bermatzen ditugu.
-          <br />
-          Gure helburua ez da bakarrik eztia eskaintzea, baizik eta gure
-          lurretako naturaren eta apikulturaren balioa zabaltzea, eta bezeroekin
-          konfiantza eta gertutasun harreman bat eraikitzea.
-          <br />
-          Zatoz eta ezagutu gure eztia, bertako zapore eta kalitatea zure etxera
-          eramateko.
-        </p>
+        <h1>{t("About.title")}</h1>
+        {t("About.text")
+          .split("\n\n")
+          .map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import logo from "../../assets/Erleaerle_logo_2.png";
 import { useTranslation } from "react-i18next";
 
 const Header = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { theme, toggleTheme } = useTheme();
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,6 +15,12 @@ const Header = () => {
   const handleNavClick = (path) => {
     navigate(path);
     setMenuOpen(false);
+  };
+
+  // Función para cambiar el idioma
+  const toggleLanguage = () => {
+    const newLang = i18n.language === "eus" ? "es" : "eus";
+    i18n.changeLanguage(newLang);
   };
 
   return (
@@ -69,6 +75,14 @@ const Header = () => {
           aria-label={t("Header.themeToggleAria")}
         >
           {theme === "dark" ? "☀️" : "🌙"}
+        </button>
+
+        <button
+          className="lang-toggle"
+          onClick={toggleLanguage}
+          aria-label="Aldatu hizkuntza / Cambiar idioma"
+        >
+          {i18n.language === "eus" ? "ES" : "EUS"}
         </button>
       </nav>
     </header>
