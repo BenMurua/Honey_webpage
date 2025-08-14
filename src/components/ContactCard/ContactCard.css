@@ -1,0 +1,44 @@
+.contact-card {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.contact-image-container {
+  flex: 0 0 50%;       /* Ocupa la mitad */
+}
+
+.contact-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.contact-info {
+  flex: 0 0 50%;       /* Ocupa la otra mitad */
+  padding: 20px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+/* Responsive: apilar en móviles */
+@media (max-width: 600px) {
+  .contact-card {
+    flex-direction: column;
+  }
+  .contact-image-container,
+  .contact-info {
+    flex: 0 0 100%;
+  }
+}
